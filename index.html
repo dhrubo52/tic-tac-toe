@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body style="background-color: cadetblue;">
+	
+	<div id="container">
+		<div id="click-area1" onclick="draw1(0, 0, 0, 0); setTimeout(aiMove, 200);"></div>
+		<div id="click-area2" onclick="draw1(0, 1, 165, 0); setTimeout(aiMove, 200);"></div>
+		<div id="click-area3" onclick="draw1(0, 2, 330, 0); setTimeout(aiMove, 200);"></div>
+		<div id="click-area4" onclick="draw1(1, 0, 0, 165); setTimeout(aiMove, 200);"></div>
+		<div id="click-area5" onclick="draw1(1, 1, 165, 165); setTimeout(aiMove, 200);"></div>
+		<div id="click-area6" onclick="draw1(1, 2, 330, 165); setTimeout(aiMove, 200);"></div>
+		<div id="click-area7" onclick="draw1(2, 0, 0, 330); setTimeout(aiMove, 200);"></div>
+		<div id="click-area8" onclick="draw1(2, 1, 165, 330); setTimeout(aiMove, 200);"></div>
+		<div id="click-area9" onclick="draw1(2, 2, 330, 330); setTimeout(aiMove, 200);"></div>
+		<canvas id="game" height="500" width="500"></canvas>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

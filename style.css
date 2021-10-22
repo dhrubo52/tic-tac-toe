@@ -1,0 +1,103 @@
+#container {
+		position: absolute;
+		top: 10%;
+		left: 33%;
+		width: 500px;
+		height: 500px;
+		border: 5px black solid;
+	}
+
+	#game {
+		position: absolute;
+		border: 2px black solid;
+		background-color: aliceblue;
+		z-index: -1;
+	}
+
+	#click-area1 {
+		position: absolute;
+		top: 8%;
+		left: 8%;
+		width: 90px;
+		height: 90px;
+		cursor: pointer;
+	}
+
+	#click-area2 {
+		position: absolute;
+		top: 8%;
+		left: 41%;
+		width: 90px;
+		height: 90px;
+		cursor: pointer;
+	}
+
+	#click-area3 {
+		position: absolute;
+		top: 8%;
+		left: 74%;
+		width: 90px;
+		height: 90px;
+		/*border: 5px black dotted;*/
+		cursor: pointer;
+	}
+
+	#click-area4 {
+		position: absolute;
+		top: 41%;
+		left: 8%;
+		width: 90px;
+		height: 90px;
+		/*border: 5px black dotted;*/
+		cursor: pointer;
+	}
+
+	#click-area5 {
+		position: absolute;
+		top: 41%;
+		left: 41%;
+		width: 90px;
+		height: 90px;
+		/*border: 5px black dotted;*/
+		cursor: pointer;
+	}
+
+	#click-area6 {
+		position: absolute;
+		top: 41%;
+		left: 74%;
+		width: 90px;
+		height: 90px;
+		/*border: 5px black dotted;*/
+		cursor: pointer;
+	}
+
+	#click-area7 {
+		position: absolute;
+		top: 74%;
+		left: 8%;
+		width: 90px;
+		height: 90px;
+		/*border: 5px black dotted;*/
+		cursor: pointer;
+	}
+
+	#click-area8 {
+		position: absolute;
+		top: 74%;
+		left: 41%;
+		width: 90px;
+		height: 90px;
+		/*border: 5px black dotted;*/
+		cursor: pointer;
+	}
+
+	#click-area9 {
+		position: absolute;
+		top: 74%;
+		left: 74%;
+		width: 90px;
+		height: 90px;
+		/*border: 5px black dotted;*/
+		cursor: pointer;
+	}
