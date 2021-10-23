@@ -1,15 +1,32 @@
-var player = 1, counter = 0, gameOver = false, row = 0, col = 0;
-var board = [ 
-	[-1, -1, -1],
-	[-1, -1, -1],
-	[-1, -1, -1]
-];
+var can = document.getElementById("game");
+var canObj = can.getContext("2d");
+canObj.fillStyle = "#000000";
+
+var player, counter, gameOver, row, col, board;
+
+start();
+
+function start() {
+	player = 1, counter = 0, gameOver = false, row = 0, col = 0;
+	board = [ 
+		[-1, -1, -1],
+		[-1, -1, -1],
+		[-1, -1, -1]
+	];
+
+	canObj.clearRect(0, 0, can.width, can.height);
+	canObj.fillRect(500/3, 10, 5, 480);
+	canObj.fillRect((500/3)*2, 10, 5, 480);
+	canObj.fillRect(10, 500/3, 480, 5);
+	canObj.fillRect(10, (500/3)*2, 480, 5);
+}
 
 function draw1(r, c, offset_x, offset_y) {
 	if(gameOver==true) return;
 	if(board[r][c]==-1) {
 		canObj.lineWidth = 5;
 		if(player==1) {
+			canObj.beginPath();
 			canObj.moveTo(25 + offset_x, 25 + offset_y);
 			canObj.lineTo(150 + offset_x, 150 + offset_y);
 
@@ -149,11 +166,3 @@ function aiMove() {
 	}
 	else if(gameOver==true) setTimeout(function() {alert("Draw!");}, 200);
 }
-
-var can = document.getElementById("game");
-var canObj = can.getContext("2d");
-canObj.fillStyle = "#000000";
-canObj.fillRect(500/3, 10, 5, 480);
-canObj.fillRect((500/3)*2, 10, 5, 480);
-canObj.fillRect(10, 500/3, 480, 5);
-canObj.fillRect(10, (500/3)*2, 480, 5);
